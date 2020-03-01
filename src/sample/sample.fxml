@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXSnackbar?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<HBox fx:controller="sample.Controller" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+        <Label text="ALL NUMBERS" textFill="#757575">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <JFXListView fx:id="allNumList" VBox.vgrow="ALWAYS"/>
+        <JFXSnackbar fx:id="snackBar"/>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+    </VBox>
+    <VBox prefHeight="480.0" prefWidth="227.0" spacing="5.0">
+        <Label text="MINIMUM" textFill="#757575">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="minField" prefWidth="50.0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <Label text="MAXIMUM" textFill="#757575">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </Label>
+        <TextField fx:id="maxField" prefWidth="50.0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <HBox alignment="TOP_RIGHT" spacing="5.0" VBox.vgrow="ALWAYS">
+            <JFXButton fx:id="runBtn" text="Run">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </JFXButton>
+            <JFXButton fx:id="loadBtn" text="Load Numbers">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </JFXButton>
+            <padding>
+                <Insets bottom="10.0" left="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+        <Label text="NEW NUMBER" textFill="#757575">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="genNumLabel" text="#">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <HBox.margin>
+            <Insets/>
+        </HBox.margin>
+        <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0"/>
+        </padding>
+    </VBox>
+</HBox>
